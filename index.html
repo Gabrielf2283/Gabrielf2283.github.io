@@ -1,38 +1,198 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Gabriel Flores Portfolio</title>
-  <style>
-    body {
-      font-family: Arial;
-      margin: 40px;
-      background-color: #0f172a;
-      color: white;
-    }
-    h1 { color: #38bdf8; }
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 10px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name | Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #020617, #1e293b);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #94a3b8;
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 16px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECTION */
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+h2 {
+    border-left: 5px solid #38bdf8;
+    padding-left: 10px;
+}
+
+/* PROJECT CARD */
+.project {
+    background: #1e293b;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.02);
+}
+
+/* IMAGE */
+.project img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background: #0f172a;
+}
+
+/* CONTENT */
+.project-content {
+    padding: 20px;
+}
+
+.project-content h3 {
+    margin-top: 0;
+}
+
+.project-links a {
+    margin-right: 10px;
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    background: #38bdf8;
+    color: black;
+    padding: 6px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 40px;
+}
+</style>
 </head>
 
 <body>
 
-<h1>Gabriel Flores</h1>
-<p>Aspiring Computer Scientist | SQL | Power BI | Python| C++ | Java | Java Scripts| </p>
-
-<div class="card">
-  <h2>📊 SQL Project</h2>
-  <p>Built a relational database with customers, orders, and products.</p>
+<!-- HERO -->
+<div class="hero">
+    <h1>Your Name</h1>
+    <p>Computer Science Student | Software Developer</p>
+    <a href="#projects" class="btn">View My Work</a>
 </div>
 
-<div class="card">
-  <h2>📈 Power BI Dashboard</h2>
-  <p>Created an interactive dashboard analyzing sales and trends.</p>
-</div>
+<!-- ABOUT -->
+<section>
+    <h2>About Me</h2>
+    <p>
+        I'm a Computer Science student passionate about building real-world applications.
+        I enjoy working on projects involving data structures, machine learning, and web development.
+    </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <!-- PROJECT 1 -->
+    <div class="project">
+        <img src="images/stock-app.png" alt="Stock App Screenshot">
+        <!-- 👉 PUT YOUR IMAGE FILE in a folder called /images -->
+
+        <div class="project-content">
+            <h3>Stock Prediction App</h3>
+            <p>
+                Machine learning app that analyzes stock data and predicts trends.
+                Built using Python and data visualization tools.
+            </p>
+
+            <div class="project-links">
+                <a href="#" class="btn">GitHub</a>
+                <a href="#" class="btn">Live Demo</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project">
+        <img src="images/skiplist.png" alt="Skip List Screenshot">
+
+        <div class="project-content">
+            <h3>Skip List Data Structure</h3>
+            <p>
+                Implemented a probabilistic data structure for fast search,
+                insertion, and deletion operations in C++.
+            </p>
+
+            <div class="project-links">
+                <a href="#" class="btn">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 👉 COPY THIS BLOCK FOR MORE PROJECTS -->
+
+</section>
+
+<!-- SKILLS -->
+<section>
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>Java</span>
+        <span>C++</span>
+        <span>JavaScript</span>
+        <span>HTML/CSS</span>
+        <span>Git</span>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+    <h2>Contact</h2>
+    <p>Email: your@email.com</p>
+    <p>GitHub: github.com/yourusername</p>
+</section>
+
+<footer>
+    <p>© 2026 Your Name</p>
+</footer>
 
 </body>
 </html>
